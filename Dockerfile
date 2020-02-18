@@ -16,7 +16,7 @@ ADD src src
 # Run it once to trigger resnet download
 RUN python src/app.py prepare
 
-#EXPOSE 5000
+EXPOSE 80
 
 # Start the server
 CMD ["python", "src/app.py", "serve"]
